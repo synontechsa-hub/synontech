@@ -199,22 +199,23 @@
 
 .media-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   margin-top: 2.5rem;
+  justify-content: center;
 }
 
 .media-card {
   position: relative;
-  background: var(--card-bg);
+  background: var(--navy2);
   border: 1px solid rgba(0, 212, 255, 0.15);
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+  border-radius: 4px; /* Subtle rounded corners instead of clip */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 .media-card:hover {
@@ -386,11 +387,12 @@
 
 .cast-strip {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   overflow-x: auto;
-  padding: 0.5rem 3rem 1.5rem;
+  padding: 1rem 3rem 2.5rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 212, 255, 0.25) transparent;
+  justify-content: center;
 }
 
 .cast-strip::-webkit-scrollbar {
@@ -406,26 +408,27 @@
 
 .cast-card {
   position: relative;
-  flex: 0 0 200px;
-  height: 300px;
+  flex: 0 0 240px;
+  height: 340px;
   overflow: hidden;
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  background: var(--navy2);
   border: 1px solid rgba(0, 212, 255, 0.15);
   cursor: pointer;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 4px;
 }
 
 .cast-card:hover {
-  transform: scale(1.04) translateY(-5px);
+  transform: scale(1.02) translateY(-5px);
   border-color: rgba(0, 212, 255, 0.5);
-  box-shadow: 0 8px 40px rgba(0, 212, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.2);
 }
 
 .cast-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center top;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -470,8 +473,8 @@
   #linker-media, #linker-features, #linker-cta-banner { padding: 4rem 1.5rem; }
   #linker-cast { padding: 4rem 0; }
   #linker-cast .section-inner { padding: 0 1.5rem; }
-  .cast-strip { padding: 0.5rem 1.5rem 1.5rem; }
-  .cast-card { flex: 0 0 160px; height: 240px; }
+  .cast-strip { padding: 1rem 1.5rem 2rem; justify-content: flex-start; }
+  .cast-card { flex: 0 0 200px; height: 300px; }
   .linker-ctas { flex-direction: column; align-items: center; }
   .btn-itch, .btn-patreon { width: 100%; max-width: 300px; justify-content: center; }
 }
