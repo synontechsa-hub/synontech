@@ -12,19 +12,19 @@ Welcome to the digital home of **SynonTech**, where we build tools that push the
 
 | Project | Description | Status |
 | :--- | :--- | :--- |
-| **🏎️ [SynConvert](https://github.com/synontechsa-hub/SynConvert)** | Ultra-fast GPU-accelerated video conversion engine. | v1.0.4 Turbo |
-| **⛓️ [SoulLink](https://github.com/synontechsa-hub/SoulLink)** | Robust backend synchronization and connectivity layer. | Stable |
-| **📐 [SynCAD](https://github.com/synontechsa-hub/SynCAD)** | Precision engineering and design automation tools. | Development |
+| **🏎️ [SynConvert](https://github.com/synontechsa-hub/_Development/tree/main/SynConvert)** | Ultra-fast GPU-accelerated video conversion engine. | v1.0.4 Turbo |
+| **🧠 [Linker.AI](https://github.com/synontechsa-hub/Linker.AI)** | Immersive spatial AI simulation with persistent digital souls. | Active Dev |
+| **📏 [KerfCut](https://github.com/synontechsa-hub/_Development/tree/main/SynCAD)** | Precision workshop productivity and sheet-cut optimization engine. | Development |
 
 ### 🏢 Studio & Workforce
-- **🆔 [WorkerPassport](https://github.com/synontechsa-hub/WorkerPassport)**: Digital identity and credential management for professional workforces.
-- **🛡️ [Legion](https://github.com/synontechsa-hub/Legion)**: Coordination and management for large-scale operations.
-- **⏱️ [SynTime](https://github.com/synontechsa-hub/SynTime)**: High-precision temporal tracking and scheduling.
+- **🆔 [WorkerPassport](https://github.com/synontechsa-hub/_Development/tree/main/WorkerPassport)**: Digital identity and credential management for professional workforces.
+- **🛡️ [Legion](https://github.com/synontechsa-hub/_Development/tree/main/Legion)**: Coordination and management for large-scale operations.
+- **⏱️ [SynTime](https://github.com/synontechsa-hub/_Development/tree/main/SynTime)**: High-precision temporal tracking and scheduling.
 
 ### 📦 Infrastructure & Utilities
-- **📋 [SynClerk](https://github.com/synontechsa-hub/SynClerk)**: Automated documentation and administrative workflow engine.
-- **🏗️ [SynContain](https://github.com/synontechsa-hub/SynContain)**: Lightweight containerization and isolation utilities.
-- **🕵️‍♂️ [SynQuest](https://github.com/synontechsa-hub/SynQuest)**: System-wide audit, stabilization, and error-prevention framework.
+- **📋 [SynClerk](https://github.com/synontechsa-hub/_Development/tree/main/SynClerk)**: Automated documentation and administrative workflow engine.
+- **🏗️ [SynContain](https://github.com/synontechsa-hub/_Development/tree/main/SynContain)**: Lightweight containerization and isolation utilities.
+- **🕵️‍♂️ [SynQuest](https://github.com/synontechsa-hub/_Development/tree/main/SynQuest)**: System-wide audit, stabilization, and error-prevention framework.
 
 ---
 
