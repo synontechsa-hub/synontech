@@ -344,6 +344,14 @@
   position: absolute;
   inset: 0;
   background-image: url('../assets/map_screens/map_screen_evening_foggy.png');
+  background-image: -webkit-image-set(
+    url('../assets/map_screens/map_screen_evening_foggy.webp') 1x,
+    url('../assets/map_screens/map_screen_evening_foggy.png') 1x
+  );
+  background-image: image-set(
+    url('../assets/map_screens/map_screen_evening_foggy.webp') type('image/webp'),
+    url('../assets/map_screens/map_screen_evening_foggy.png') type('image/png')
+  );
   background-size: cover;
   background-position: center top;
   filter: brightness(0.18) saturate(1.4);
