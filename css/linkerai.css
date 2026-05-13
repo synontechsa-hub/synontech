@@ -343,14 +343,14 @@
 .linker-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/map_screens/map_screen_evening_foggy.png');
+  background-image: url('../assets/map_screens/map_screen_evening_foggy_02.png');
   background-image: -webkit-image-set(
-    url('../assets/map_screens/map_screen_evening_foggy.webp') 1x,
-    url('../assets/map_screens/map_screen_evening_foggy.png') 1x
+    url('../assets/map_screens/map_screen_evening_foggy_02.webp') 1x,
+    url('../assets/map_screens/map_screen_evening_foggy_02.png') 1x
   );
   background-image: image-set(
-    url('../assets/map_screens/map_screen_evening_foggy.webp') type('image/webp'),
-    url('../assets/map_screens/map_screen_evening_foggy.png') type('image/png')
+    url('../assets/map_screens/map_screen_evening_foggy_02.webp') type('image/webp'),
+    url('../assets/map_screens/map_screen_evening_foggy_02.png') type('image/png')
   );
   background-size: cover;
   background-position: center top;

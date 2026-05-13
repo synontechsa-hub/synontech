@@ -5,6 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf4e788a-ad42-4f34-93f1-b96385524711" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_afternoon_raining_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_afternoon_thunderstorms_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_evening_clear_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_evening_foggy_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_morning_clear_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_night_snowing_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_night_snowing_heavy_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/soul_cards/echo_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/soul_cards/haruto_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/soul_cards/juno_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/soul_cards/renji_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/soul_cards/selene_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/linkerai.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/linkerai.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkerai.html" beforeDir="false" afterPath="$PROJECT_DIR$/linkerai.html" afterDir="false" />
     </list>

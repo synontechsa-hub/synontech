@@ -59,7 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 !repo.name.toLowerCase().endsWith('-website')
             );
 
-            animateValue(repoCountEl, 0, projectRepos.length, 1500);
+            const count = projectRepos.length;
+
+            // Set up an observer to start animation when visible
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateValue(repoCountEl, 0, count, 1500);
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            statsObserver.observe(repoCountEl);
+
         } catch (err) {
             console.warn('Repo sync failed, using fallback.', err);
         }
