@@ -1,5 +1,5 @@
 /* ============================================================
-   SYNONTECH — HERO
+   synontech — hero
    Hero section, ambient orbs, grid bg, title, CTA buttons, stats.
    ============================================================ */
 
@@ -60,7 +60,6 @@
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   color: var(--cyan);
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s ease forwards;
@@ -125,7 +124,6 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: var(--navy);
   background: linear-gradient(90deg, var(--cyan), var(--blue));
   border: none;
@@ -147,7 +145,6 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: var(--cyan);
   background: transparent;
   border: 1px solid var(--border-cyan);
@@ -191,7 +188,6 @@
 .stat-label {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: rgba(207, 232, 255, 0.45);
   font-family: 'Share Tech Mono', monospace;
 }

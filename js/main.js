@@ -1,5 +1,5 @@
 /* ============================================================
-   SYNONTECH — main.js
+   synontech — main.js
    Scroll-reveal observer + mobile hamburger toggle + stats sync.
    ============================================================ */
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function syncRepoCount() {
         if (!repoCountEl) return;
         try {
-            const response = await fetch('https://api.github.com/users/SynonTechSA-Hub/repos?per_page=100');
+            const response = await fetch('https://api.github.com/users/synontechsa-hub/repos?per_page=100');
             if (!response.ok) throw new Error('GitHub API fail');
             const repos = await response.json();
 

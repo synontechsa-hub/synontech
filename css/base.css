@@ -1,5 +1,5 @@
 /* ============================================================
-   SYNONTECH — BASE
+   synontech — base
    Reset, body, ambient effects, shared section styles, divider.
    ============================================================ */
 
@@ -75,7 +75,6 @@ section {
   font-size: 0.7rem;
   letter-spacing: 0.35em;
   color: var(--pink);
-  text-transform: uppercase;
   margin-bottom: 0.75rem;
   display: flex;
   align-items: center;

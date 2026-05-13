@@ -1,6 +1,6 @@
 /* ============================================================
-   LINKER.AI — PAGE-SPECIFIC STYLES
-   Builds on top of the shared SynonTech CSS.
+   linker.ai — page-specific styles
+   builds on top of the shared synontech css.
    ============================================================ */
 
 /* ── Page hero ── */
@@ -58,7 +58,6 @@
   font-size: 0.72rem;
   letter-spacing: 0.35em;
   color: var(--cyan);
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s ease forwards;
@@ -91,7 +90,6 @@
   font-weight: 400;
   letter-spacing: 0.2em;
   color: rgba(207, 232, 255, 0.5);
-  text-transform: uppercase;
   margin-bottom: 2rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.5s ease forwards;
@@ -123,7 +121,6 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: var(--navy);
   background: linear-gradient(90deg, var(--cyan), var(--blue));
   border: none;
@@ -148,7 +145,6 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: var(--pink);
   background: transparent;
   border: 1px solid var(--border-pink);
@@ -180,7 +176,6 @@
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #00ff88;
 }
 
@@ -316,12 +311,12 @@
   margin-right: auto;
 }
 
-/* ── Back to SynonTech nav link ── */
+/* ── back to synontech nav link ── */
 .back-link {
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: rgba(207, 232, 255, 0.45);
   text-decoration: none;
   display: flex;
@@ -465,7 +460,6 @@
   font-size: 0.6rem;
   letter-spacing: 0.18em;
   color: rgba(207, 232, 255, 0.45);
-  text-transform: uppercase;
 }
 
 /* ── Mobile ── */

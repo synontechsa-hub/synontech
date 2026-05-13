@@ -1,6 +1,6 @@
 /* ============================================================
-   SYNQUEST — PAGE-SPECIFIC STYLES
-   Builds on top of the shared SynonTech CSS.
+   synquest — page-specific styles
+   builds on top of the shared synontech css.
    Aesthetic: Grimdark, Ash, Candlelight, MUD.
    ============================================================ */
 
@@ -306,12 +306,12 @@
   font-family: serif;
 }
 
-/* ── Back to SynonTech nav link ── */
+/* ── back to synontech nav link ── */
 .back-link {
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   display: flex;

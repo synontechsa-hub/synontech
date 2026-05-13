@@ -1,5 +1,5 @@
 /* ============================================================
-   SYNCONVERT — PAGE-SPECIFIC STYLES
+   synconvert — page-specific styles
    Aesthetic: Clean Desktop App, Dark Mode, Gold/Amber Accents, Precision
    ============================================================ */
 
@@ -312,12 +312,12 @@
   border-top: 1px solid rgba(255, 170, 0, 0.1);
 }
 
-/* ── Back to SynonTech nav link ── */
+/* ── back to synontech nav link ── */
 .back-link {
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   display: flex;

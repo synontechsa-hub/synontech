@@ -1,8 +1,8 @@
-# 🌌 SynonTech
+# 🌌 synontech
 
 **High-Performance Software Engineering & Design Studio**
 
-Welcome to the digital home of **SynonTech**, where we build tools that push the limits of speed, efficiency, and user experience.
+Welcome to the digital home of **synontech**, where we build tools that push the limits of speed, efficiency, and user experience.
 
 ---
 
@@ -12,19 +12,19 @@ Welcome to the digital home of **SynonTech**, where we build tools that push the
 
 | Project | Description | Status |
 | :--- | :--- | :--- |
-| **🏎️ [SynConvert](https://github.com/synontechsa-hub/_Development/tree/main/SynConvert)** | Ultra-fast GPU-accelerated video conversion engine. | v1.0.4 Turbo |
-| **🧠 [Linker.AI](https://github.com/synontechsa-hub/Linker.AI)** | Immersive spatial AI simulation with persistent digital souls. | Active Dev |
-| **📏 [KerfCut](https://github.com/synontechsa-hub/_Development/tree/main/SynCAD)** | Precision workshop productivity and sheet-cut optimization engine. | Development |
+| **🏎️ [synconvert](https://github.com/synontechsa-hub/_Development/tree/main/synconvert)** | ultra-fast gpu-accelerated video conversion engine. | v1.0.4 turbo |
+| **🧠 [linker.ai](https://github.com/synontechsa-hub/linker.ai)** | immersive spatial ai simulation with persistent digital souls. | active dev |
+| **📏 [kerfcut](https://github.com/synontechsa-hub/_Development/tree/main/syncad)** | precision workshop productivity and sheet-cut optimization engine. | development |
 
-### 🏢 Studio & Workforce
-- **🆔 [WorkerPassport](https://github.com/synontechsa-hub/_Development/tree/main/WorkerPassport)**: Digital identity and credential management for professional workforces.
-- **🛡️ [Legion](https://github.com/synontechsa-hub/_Development/tree/main/Legion)**: Coordination and management for large-scale operations.
-- **⏱️ [SynTime](https://github.com/synontechsa-hub/_Development/tree/main/SynTime)**: High-precision temporal tracking and scheduling.
+### 🏢 studio & workforce
+- **🆔 [workerpassport](https://github.com/synontechsa-hub/_Development/tree/main/workerpassport)**: digital identity and credential management for professional workforces.
+- **🛡️ [legion](https://github.com/synontechsa-hub/_Development/tree/main/legion)**: coordination and management for large-scale operations.
+- **⏱️ [syntime](https://github.com/synontechsa-hub/_Development/tree/main/syntime)**: high-precision temporal tracking and scheduling.
 
-### 📦 Infrastructure & Utilities
-- **📋 [SynClerk](https://github.com/synontechsa-hub/_Development/tree/main/SynClerk)**: Automated documentation and administrative workflow engine.
-- **🏗️ [SynContain](https://github.com/synontechsa-hub/_Development/tree/main/SynContain)**: Lightweight containerization and isolation utilities.
-- **🕵️‍♂️ [SynQuest](https://github.com/synontechsa-hub/_Development/tree/main/SynQuest)**: System-wide audit, stabilization, and error-prevention framework.
+### 📦 infrastructure & utilities
+- **📋 [synclerk](https://github.com/synontechsa-hub/_Development/tree/main/synclerk)**: automated documentation and administrative workflow engine.
+- **🏗️ [syncontain](https://github.com/synontechsa-hub/_Development/tree/main/syncontain)**: lightweight containerization and isolation utilities.
+- **🕵️‍♂️ [synquest](https://github.com/synontechsa-hub/_Development/tree/main/synquest)**: system-wide audit, stabilization, and error-prevention framework.
 
 ---
 
@@ -39,7 +39,7 @@ Welcome to the digital home of **SynonTech**, where we build tools that push the
 ## 📫 Connect
 
 - **GitHub Hub**: [synontechsa-hub](https://github.com/synontechsa-hub)
-- **Current Focus**: v1.0.4 SynConvert Optimization
+- **Current Focus**: v1.0.4 synconvert optimization
 
 ---
-*© 2026 SynonTech. All Rights Reserved. Proprietary & Confidential.*
+*© 2026 synontech. all rights reserved. proprietary & confidential.*
