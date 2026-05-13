@@ -1,0 +1,53 @@
+/* ============================================================
+   SYNONTECH — FOOTER
+   ============================================================ */
+
+footer {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(0, 212, 255, 0.12);
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  letter-spacing: 0.1em;
+}
+
+.footer-copy {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(207, 232, 255, 0.3);
+  letter-spacing: 0.1em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-links a {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(207, 232, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--cyan); }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  footer { flex-direction: column; text-align: center; }
+}

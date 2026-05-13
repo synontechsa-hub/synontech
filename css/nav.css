@@ -1,0 +1,142 @@
+/* ============================================================
+   SYNONTECH — NAVIGATION
+   Top nav bar, logo, links, CTA, mobile hamburger.
+   ============================================================ */
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: rgba(2, 11, 24, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-cyan);
+}
+
+.nav-logo {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-img {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(207, 232, 255, 0.7);
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--cyan);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+.nav-cta {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  padding: 0.45rem 1.2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  position: relative;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  background: transparent;
+}
+
+.nav-cta:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: var(--glow-cyan);
+}
+
+/* ── Hamburger (mobile only) ── */
+.nav-hamburger {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border-cyan);
+  color: var(--cyan);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.nav-hamburger:hover {
+  background: rgba(0, 212, 255, 0.08);
+  box-shadow: var(--glow-cyan);
+}
+
+.nav-links li.mobile-only {
+  display: none;
+}
+
+/* ── Mobile breakpoint ── */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0 0.75rem;
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+    order: 3;
+  }
+
+  .nav-links li.mobile-only {
+    display: block;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0.8rem 0;
+  }
+}

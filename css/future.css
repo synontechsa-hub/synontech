@@ -1,0 +1,64 @@
+/* ============================================================
+   SYNONTECH — FUTURE / ON THE HORIZON
+   Upcoming projects section and dashed placeholder cards.
+   ============================================================ */
+
+#future {
+  border-top: 1px solid rgba(192, 32, 255, 0.12);
+  background: linear-gradient(180deg, transparent, rgba(20, 4, 40, 0.4) 50%, transparent);
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.future-card {
+  border: 1px dashed rgba(192, 32, 255, 0.25);
+  padding: 1.75rem;
+  position: relative;
+  background: rgba(20, 4, 40, 0.3);
+  transition: all 0.3s;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.future-card:hover {
+  border-color: rgba(192, 32, 255, 0.5);
+  background: rgba(20, 4, 40, 0.5);
+  box-shadow: 0 4px 30px rgba(192, 32, 255, 0.12);
+}
+
+.future-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  filter: grayscale(0.3);
+}
+
+.future-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.5rem;
+}
+
+.future-desc {
+  font-size: 0.85rem;
+  color: rgba(207, 232, 255, 0.45);
+  line-height: 1.6;
+}
+
+.future-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(192, 32, 255, 0.3);
+  padding: 0.2rem 0.5rem;
+  background: rgba(192, 32, 255, 0.05);
+}

@@ -1,0 +1,350 @@
+/* ============================================================
+   SYNCONVERT — PAGE-SPECIFIC STYLES
+   Aesthetic: Clean Desktop App, Dark Mode, Gold/Amber Accents, Precision
+   ============================================================ */
+
+/* ── Page hero ── */
+#synconvert-hero {
+  position: relative;
+  z-index: 2;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  overflow: hidden;
+  background-color: #0b0c10;
+}
+
+/* Technical blueprint background */
+.synconvert-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 170, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 170, 0, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+}
+
+.synconvert-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(255, 170, 0, 0.08) 0%, transparent 60%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.synconvert-eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: #ffaa00;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s ease forwards;
+  background: rgba(255, 170, 0, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+.synconvert-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.35s ease forwards;
+  color: #ffffff;
+}
+
+.synconvert-title span {
+  color: #ffaa00;
+}
+
+.synconvert-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.5s ease forwards;
+}
+
+/* ── CTA buttons ── */
+.synconvert-ctas {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.65s ease forwards;
+}
+
+.btn-gold {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0b0c10;
+  background: #ffaa00;
+  border: none;
+  padding: 1rem 2.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.25s;
+  box-shadow: 0 4px 15px rgba(255, 170, 0, 0.3);
+}
+
+.btn-gold:hover {
+  background: #ffbb33;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(255, 170, 0, 0.4);
+}
+
+.btn-outline-gold {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffaa00;
+  background: transparent;
+  border: 1px solid rgba(255, 170, 0, 0.5);
+  padding: 1rem 2.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.25s;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(255, 170, 0, 0.1);
+  border-color: #ffaa00;
+  transform: translateY(-3px);
+}
+
+/* ── UI Preview Mockup ── */
+.ui-mockup-wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 900px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.8s ease forwards;
+}
+
+.ui-mockup {
+  background: #111216;
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.ui-header {
+  height: 32px;
+  background: #1a1c22;
+  border-bottom: 1px solid rgba(255, 170, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 8px;
+}
+
+.ui-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #333;
+}
+
+.ui-dot.active { background: #ffaa00; }
+
+.ui-body {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+}
+
+.ui-sidebar {
+  flex: 0 0 200px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ui-menu-item {
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.ui-menu-item.active {
+  background: rgba(255, 170, 0, 0.1);
+  color: #ffaa00;
+}
+
+.ui-content {
+  flex: 1;
+}
+
+.ui-progress-bar {
+  height: 6px;
+  background: #222;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.ui-progress-fill {
+  height: 100%;
+  background: #ffaa00;
+  width: 65%;
+}
+
+/* ── Features ── */
+#synconvert-features {
+  padding: 6rem 0;
+  background: #0d0f12;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 0 3rem;
+}
+
+.feature-card {
+  background: #13151a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 6px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+  border-color: rgba(255, 170, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.feature-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+/* ── Specs Section ── */
+#synconvert-specs {
+  padding: 6rem 3rem;
+  background: #0b0c10;
+}
+
+.specs-table-wrapper {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  background: #111216;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.specs-row {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.specs-row:last-child {
+  border-bottom: none;
+}
+
+.specs-label {
+  flex: 0 0 30%;
+  padding: 1.5rem;
+  background: #16181d;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.specs-value {
+  flex: 1;
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* ── Bottom CTA banner ── */
+#synconvert-cta-banner {
+  text-align: center;
+  padding: 5rem 3rem;
+  background: linear-gradient(0deg, rgba(255, 170, 0, 0.05), transparent);
+  border-top: 1px solid rgba(255, 170, 0, 0.1);
+}
+
+/* ── Back to SynonTech nav link ── */
+.back-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: #ffaa00; }
+
+.synconvert-nav-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffaa00;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  #synconvert-features, #synconvert-specs, #synconvert-cta-banner { padding: 4rem 1.5rem; }
+  .features-grid { padding: 0; }
+  .synconvert-ctas { flex-direction: column; align-items: center; }
+  .btn-gold, .btn-outline-gold { width: 100%; max-width: 300px; justify-content: center; }
+  .ui-body { flex-direction: column; }
+  .ui-sidebar { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 1rem; flex: none; }
+  .specs-row { flex-direction: column; }
+  .specs-label { padding: 1rem; flex: none; }
+  .specs-value { padding: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.02); }
+}

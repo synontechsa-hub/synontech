@@ -1,0 +1,33 @@
+/* ============================================================
+   SYNONTECH — DESIGN TOKENS
+   All CSS custom properties live here.
+   ============================================================ */
+
+:root {
+  /* Brand colours */
+  --cyan:    #00d4ff;
+  --blue:    #0080ff;
+  --pink:    #c020ff;
+  --magenta: #ff00aa;
+
+  /* Background scale */
+  --navy:  #020b18;
+  --navy2: #041428;
+  --navy3: #071e36;
+
+  /* Component */
+  --card-bg: rgba(4, 20, 40, 0.85);
+
+  /* Glow shadows */
+  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.4), 0 0 40px rgba(0, 212, 255, 0.15);
+  --glow-pink: 0 0 20px rgba(192, 32, 255, 0.4), 0 0 40px rgba(192, 32, 255, 0.15);
+
+  /* Border colours */
+  --border-cyan: rgba(0, 212, 255, 0.3);
+  --border-pink: rgba(192, 32, 255, 0.3);
+
+  /* Missing Project Tokens */
+  --gold: #ffaa00;
+  --teal: #00ffcc;
+  --white-pure: #ffffff;
+}

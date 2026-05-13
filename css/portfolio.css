@@ -1,0 +1,198 @@
+/* ============================================================
+   SYNONTECH — PORTFOLIO
+   Project card grid, card anatomy, colour variants.
+   ============================================================ */
+
+#portfolio {
+  padding-bottom: 5rem;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Card base ── */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover {
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(0, 212, 255, 0.15), 0 0 0 1px rgba(0, 212, 255, 0.2);
+}
+
+.project-card:hover::before { opacity: 1; }
+
+/* ── Card anatomy ── */
+.card-accent {
+  position: absolute;
+  top: 0; right: 0;
+  width: 20px; height: 20px;
+  border-bottom: 1px solid var(--cyan);
+  border-left: 1px solid var(--cyan);
+}
+
+.card-banner {
+  height: 5px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-type {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card-type::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--cyan); /* Default fallback */
+}
+
+.card-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: rgba(207, 232, 255, 0.6);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.tag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.card-status {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+.card-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s;
+}
+
+.card-link:hover { text-shadow: var(--glow-cyan); }
+
+/* ── Colour variants ── */
+
+/* Cyan (Linker.AI) */
+.card--cyan .card-banner  { background: linear-gradient(90deg, var(--cyan), var(--blue)); }
+.card--cyan .card-type    { color: var(--cyan); }
+.card--cyan .card-type::before { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+.card--cyan .tag          { color: var(--cyan); border-color: rgba(0, 212, 255, 0.25); background: rgba(0, 212, 255, 0.06); }
+.card--cyan .card-link    { color: var(--cyan); }
+.card--cyan .status-dot   { background: #00ff88; box-shadow: 0 0 6px #00ff88; }
+.card--cyan .card-status  { color: #00ff88; }
+
+/* Pink (SynQuest) */
+.card--pink .card-banner  { background: linear-gradient(90deg, var(--pink), var(--magenta)); }
+.card--pink .card-type    { color: var(--pink); }
+.card--pink .card-type::before { background: var(--pink); box-shadow: 0 0 6px var(--pink); }
+.card--pink .tag          { color: var(--pink); border-color: rgba(192, 32, 255, 0.25); background: rgba(192, 32, 255, 0.06); }
+.card--pink .card-link    { color: var(--pink); }
+.card--pink .status-dot   { background: var(--pink); box-shadow: 0 0 6px var(--pink); }
+.card--pink .card-status  { color: var(--pink); }
+
+/* Gold (SynConvert) */
+.card--gold .card-banner  { background: linear-gradient(90deg, var(--gold), #ff6600); }
+.card--gold .card-type    { color: var(--gold); }
+.card--gold .card-type::before { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
+.card--gold .tag          { color: var(--gold); border-color: rgba(255, 170, 0, 0.25); background: rgba(255, 170, 0, 0.06); }
+.card--gold .card-link    { color: var(--gold); }
+.card--gold .status-dot   { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
+.card--gold .card-status  { color: var(--gold); }
+
+/* Teal (KerfCut) */
+.card--teal .card-banner  { background: linear-gradient(90deg, var(--teal), #00aaff); }
+.card--teal .card-type    { color: var(--teal); }
+.card--teal .card-type::before { background: var(--teal); box-shadow: 0 0 6px var(--teal); }
+.card--teal .tag          { color: var(--teal); border-color: rgba(0, 255, 204, 0.25); background: rgba(0, 255, 204, 0.06); }
+.card--teal .card-link    { color: var(--teal); }
+.card--teal .status-dot   { background: var(--teal); box-shadow: 0 0 6px var(--teal); animation: none; }
+.card--teal .card-status  { color: rgba(207, 232, 255, 0.4); }

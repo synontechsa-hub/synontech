@@ -1,0 +1,341 @@
+/* ============================================================
+   SYNQUEST — PAGE-SPECIFIC STYLES
+   Builds on top of the shared SynonTech CSS.
+   Aesthetic: Grimdark, Ash, Candlelight, MUD.
+   ============================================================ */
+
+/* ── Page hero ── */
+#synquest-hero {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  overflow: hidden;
+  background-color: #040506; /* Deepest ash */
+}
+
+/* Ash particle background effect */
+.synquest-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(255, 170, 0, 0.05) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.8) 0%, rgba(5, 5, 5, 0.95) 100%);
+  background-size: cover;
+}
+
+/* Layered candlelight glow orbs */
+.synquest-orb-1 {
+  position: absolute;
+  width: 800px; height: 500px;
+  background: radial-gradient(ellipse, rgba(255, 100, 0, 0.08) 0%, transparent 70%);
+  bottom: -10%; left: 50%; transform: translateX(-50%);
+  filter: blur(80px);
+  pointer-events: none;
+  animation: flicker 4s infinite alternate;
+}
+.synquest-orb-2 {
+  position: absolute;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(200, 50, 0, 0.05) 0%, transparent 70%);
+  top: 15%; right: 10%;
+  filter: blur(90px);
+  pointer-events: none;
+  animation: flicker 6s infinite alternate-reverse;
+}
+
+@keyframes flicker {
+  0%   { opacity: 0.8; transform: translateX(-50%) scale(1); }
+  25%  { opacity: 1; transform: translateX(-51%) scale(1.02); }
+  50%  { opacity: 0.7; transform: translateX(-49%) scale(0.98); }
+  75%  { opacity: 0.9; transform: translateX(-50%) scale(1.01); }
+  100% { opacity: 0.8; transform: translateX(-50%) scale(1); }
+}
+
+.synquest-eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s ease forwards;
+}
+
+.synquest-eyebrow::before {
+  content: '† ';
+  color: #ffaa00;
+}
+
+.synquest-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.35s ease forwards;
+  color: #e0e0e0;
+  text-shadow: 0 0 20px rgba(255, 170, 0, 0.2);
+}
+
+.synquest-tagline {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.5s ease forwards;
+}
+
+.synquest-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.65s ease forwards;
+  font-family: serif; /* A bit of classical grimdark feel */
+}
+
+/* ── CTA buttons ── */
+.synquest-ctas {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.8s ease forwards;
+}
+
+.btn-ash {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(90deg, #333, #111);
+  border: 1px solid #555;
+  padding: 1rem 2.25rem;
+  cursor: not-allowed; /* Early Dev */
+  text-decoration: none;
+  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.btn-ash:hover {
+  background: linear-gradient(90deg, #444, #222);
+  border-color: #ffaa00;
+  color: #ffaa00;
+}
+
+/* ── Status pill ── */
+.synquest-status {
+  margin-top: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 1s ease forwards;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffaa00;
+}
+
+.synquest-status-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #ffaa00;
+  box-shadow: 0 0 8px #ffaa00;
+  animation: pulse 3s infinite;
+}
+
+/* ── Features ── */
+#synquest-features {
+  background: linear-gradient(180deg, transparent, rgba(20, 10, 0, 0.4) 50%, transparent);
+  border-top: 1px solid rgba(255, 170, 0, 0.08);
+  border-bottom: 1px solid rgba(255, 170, 0, 0.08);
+  padding: 6rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 0 3rem;
+}
+
+.feature-card {
+  background: rgba(10, 10, 12, 0.8);
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  padding: 2rem;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+}
+
+.feature-card:hover {
+  border-color: rgba(255, 170, 0, 0.3);
+  background: rgba(20, 15, 10, 0.9);
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffaa00;
+}
+
+.feature-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.feature-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  font-family: serif;
+}
+
+/* ── Narrative Log Section (MUD Preview) ── */
+#synquest-log {
+  padding: 6rem 0;
+  background: #040506;
+}
+
+.log-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #0a0b0c;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  color: #b0b0b0;
+  line-height: 1.6;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+  position: relative;
+}
+
+.log-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 30px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), transparent);
+}
+
+.log-entry {
+  margin-bottom: 1.5rem;
+}
+
+.log-system {
+  color: #555;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.log-narrator {
+  color: #e0e0e0;
+}
+
+.log-action {
+  color: #ffaa00;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.log-action::before {
+  content: '>';
+  color: #ffaa00;
+}
+
+/* ── Bottom CTA banner ── */
+#synquest-cta-banner {
+  text-align: center;
+  padding: 5rem 3rem;
+  border-top: 1px solid rgba(255, 170, 0, 0.08);
+}
+
+.cta-banner-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.cta-banner-title span {
+  color: #ffaa00;
+}
+
+.cta-banner-sub {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: serif;
+}
+
+/* ── Back to SynonTech nav link ── */
+.back-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: #ffaa00; }
+
+/* ── SynQuest nav override ── */
+.synquest-nav-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffaa00;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  #synquest-features, #synquest-cta-banner, #synquest-log { padding: 4rem 1.5rem; }
+  .features-grid { padding: 0 1.5rem; }
+  .synquest-ctas { flex-direction: column; align-items: center; }
+  .btn-ash { width: 100%; max-width: 300px; justify-content: center; }
+  .log-container { padding: 1.5rem; }
+}

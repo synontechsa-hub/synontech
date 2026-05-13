@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SynQuest: The Ashen Veil. A grimdark text RPG where the dead do not stay dead.">
+  <title>SynQuest | SynonTech</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="css/synquest.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     NAV (Simplified for Project Page)
+═══════════════════════════════════════════════ -->
+<nav style="justify-content: space-between; border-bottom: 1px solid rgba(255, 170, 0, 0.1);">
+  <a href="index.html" class="back-link">
+    &larr; SynonTech
+  </a>
+  <div class="synquest-nav-title">
+    <img src="assets/synontech_lettermark.png" alt="" class="nav-logo-img" style="filter: grayscale(100%) brightness(1.5); opacity: 0.5;">
+    SYNQUEST
+  </div>
+  <div style="width: 80px;"></div> <!-- Spacer for flex balance -->
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section id="synquest-hero">
+  <div class="synquest-grid-bg"></div>
+  <div class="synquest-orb-1"></div>
+  <div class="synquest-orb-2"></div>
+
+  <p class="synquest-eyebrow">Project // First Ember Build</p>
+
+  <h1 class="synquest-title">SYNQUEST</h1>
+  <p class="synquest-tagline">The Ashen Veil</p>
+
+  <p class="synquest-desc">
+    A thousand years ago the sorcerer-kings of Vyrn performed the Rite of Eternal Dawn — a ritual meant to banish death itself. It worked for three heartbeats. Then the Veil tore.
+    Welcome to a grimdark MUD experience where text is the canvas.
+  </p>
+
+  <div class="synquest-ctas">
+    <a href="#" class="btn-ash">Repository Locked</a>
+  </div>
+
+  <div class="synquest-status">
+    <span class="synquest-status-dot"></span>
+    Early Development v1.0.2
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FEATURES
+═══════════════════════════════════════════════ -->
+<section id="synquest-features">
+  <div class="section-inner" style="max-width: 1200px; margin: 0 auto;">
+    <p class="section-tag reveal" style="text-align: center; color: rgba(255, 170, 0, 0.5);">Mechanics_01</p>
+    <h2 class="section-title reveal" style="text-align: center;">Core <span>Systems</span></h2>
+    
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">🕯️</div>
+        <h3 class="feature-title">The LLM Witness</h3>
+        <p class="feature-desc">Powered by an ancient, exhausted LLM narrator. It never lies, but as your Ember wanes, it becomes the most frightening thing in the game. You are not the hero.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">💀</div>
+        <h3 class="feature-title">The Sutured</h3>
+        <p class="feature-desc">When you die, you come back. Wrong. Every death leaves a scar, a quirk, and a Remnant in the persistent world. The dead do not stay dead, and they repeat their last words forever.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🎲</div>
+        <h3 class="feature-title">Gamified Data</h3>
+        <p class="feature-desc">Built on robust Python and SQLite architectures. Pure text interfaces layered over deep state management, dynamic encounters, and evolving world flags.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">🗡️</div>
+        <h3 class="feature-title">Brutal Mechanics</h3>
+        <p class="feature-desc">Manage Flesh, Ember, and your dwindling Candle fuel. Navigate the fog of war with positional combat, class rites, and desperate rally strikes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     MUD LOG PREVIEW
+═══════════════════════════════════════════════ -->
+<section id="synquest-log">
+  <div class="section-inner" style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+    <p class="section-tag reveal" style="text-align: center; color: rgba(255, 170, 0, 0.5);">Terminal_02</p>
+    <h2 class="section-title reveal" style="text-align: center;">The <span>Rusty Boar</span></h2>
+
+    <div class="log-container reveal reveal-delay-1">
+      <div class="log-entry">
+        <div class="log-system">[SYS] Location: The Rusty Boar Tavern | Exits: West</div>
+        <div class="log-narrator">
+          The last functioning hearth. Tables overturned. One tallow candle. 
+          The flame bends toward the door as if trying to escape. The smell of old blood and cheap ale. 
+          The barkeep is still behind the bar, wiping the same spot he has wiped for a century.
+        </div>
+      </div>
+      
+      <div class="log-entry">
+        <div class="log-action">USE health_potion</div>
+      </div>
+      
+      <div class="log-entry">
+        <div class="log-system">[SYS] Player Flesh Restored</div>
+        <div class="log-narrator">
+          The body makes use of the liquid. The sediment at the bottom of the vial settles back down. 
+          You are functional again. Whether that persists is another question.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     BOTTOM CTA
+═══════════════════════════════════════════════ -->
+<section id="synquest-cta-banner">
+  <div class="section-inner">
+    <h2 class="cta-banner-title reveal">Every Candle Is On <span>Borrowed Time</span></h2>
+    <p class="cta-banner-sub reveal reveal-delay-1">SynQuest is currently in closed, experimental development by SynonTech.</p>
+    <div class="synquest-ctas reveal reveal-delay-2" style="justify-content: center; opacity: 1; animation: none;">
+      <a href="index.html" class="btn-ash" style="background: transparent;">Return to Hub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-logo">SYNONTECH</div>
+      <p class="footer-tagline">Vision. Code. Execution.</p>
+    </div>
+    
+    <div class="footer-right">
+      <a href="https://github.com/synontechsa-hub" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://synontech.itch.io/" target="_blank" rel="noopener">itch.io</a>
+      <a href="mailto:synontech.sa@gmail.com">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="current-year">2024</span> SynonTech. All rights reserved.</p>
+    <p class="sys-status">SYS.ONLINE // 100%</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
