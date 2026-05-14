@@ -1,33 +1,40 @@
 /* ============================================================
-   synontech — design tokens
-   All CSS custom properties live here.
+   synontech — true cyberpunk identity
+   Inspired by the high-contrast "Night City" aesthetic.
    ============================================================ */
 
 :root {
-  /* Brand colours */
-  --cyan:    #00d4ff;
-  --blue:    #0080ff;
-  --pink:    #c020ff;
-  --magenta: #ff00aa;
+  /* --- The "Night" (Vibrant Neons) --- */
+  --neon-yellow:  #fcee0a; /* Iconic CP2077 Yellow */
+  --neon-cyan:    #00f3ff; /* Electric Cyan */
+  --neon-pink:    #ff0055; /* High-intensity Pink */
+  --neon-blue:    #005eff; /* Deep Electric Blue */
+  --neon-green:   #00ff88; /* Matrix/HUD Green */
+  --neon-red:     #ff003c; /* Warning Red */
 
-  /* Background scale */
-  --navy:  #020b18;
-  --navy2: #041428;
-  --navy3: #071e36;
+  /* --- The "Day" (Gritty Industrial) --- */
+  --black-void:   #050505;
+  --navy-deep:    #020b18;
+  --concrete:     #1a1a1a; /* Dull street grey */
+  --gunmetal:     #2d2d2d;
+  --steel:        #4f4f4f;
 
-  /* Component */
-  --card-bg: rgba(4, 20, 40, 0.85);
+  /* --- Functional Assignments --- */
+  --primary:      var(--neon-cyan);
+  --secondary:    var(--neon-pink);
+  --accent:       var(--neon-yellow);
 
-  /* Glow shadows */
-  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.4), 0 0 40px rgba(0, 212, 255, 0.15);
-  --glow-pink: 0 0 20px rgba(192, 32, 255, 0.4), 0 0 40px rgba(192, 32, 255, 0.15);
+  --bg-main:      var(--black-void);
+  --bg-card:      rgba(20, 20, 20, 0.9);
+  --text-main:    #e0e0e0;
+  --text-dim:     #888888;
 
-  /* Border colours */
-  --border-cyan: rgba(0, 212, 255, 0.3);
-  --border-pink: rgba(192, 32, 255, 0.3);
+  /* --- Glows & FX --- */
+  --glow-cyan:   0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.2);
+  --glow-pink:   0 0 10px rgba(255, 0, 85, 0.5), 0 0 20px rgba(255, 0, 85, 0.2);
+  --glow-yellow: 0 0 15px rgba(252, 238, 10, 0.4);
 
-  /* Missing Project Tokens */
-  --gold: #ffaa00;
-  --teal: #00ffcc;
-  --white-pure: #ffffff;
+  /* --- Borders --- */
+  --border-main: 1px solid rgba(255, 255, 255, 0.1);
+  --border-neon: 1px solid var(--primary);
 }

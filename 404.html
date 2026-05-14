@@ -11,8 +11,8 @@
 
   <style>
     body {
-      background-color: var(--navy);
-      color: var(--cyan);
+      background-color: var(--black-void);
+      color: var(--neon-cyan);
       height: 100vh;
       margin: 0;
       display: flex;
@@ -30,7 +30,7 @@
       margin: 0;
       line-height: 1;
       position: relative;
-      text-shadow: var(--glow-cyan);
+      text-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
       animation: glitch 2s infinite;
     }
 
@@ -46,13 +46,13 @@
     }
 
     .error-code::before {
-      color: var(--pink);
+      color: var(--neon-pink);
       z-index: -1;
       animation: glitch-offset 3s infinite;
     }
 
     .error-code::after {
-      color: #00ff88;
+      color: var(--neon-yellow);
       z-index: -2;
       animation: glitch-offset 2.5s infinite reverse;
     }
@@ -65,7 +65,7 @@
     }
 
     .message strong {
-      color: var(--pink);
+      color: var(--neon-pink);
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
@@ -74,21 +74,21 @@
       display: inline-block;
       margin-top: 2rem;
       padding: 1rem 2.5rem;
-      background: transparent;
-      color: var(--cyan);
-      border: 1px solid var(--cyan);
+      background: var(--neon-yellow);
+      color: #000;
+      border: none;
       font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-size: 0.9rem;
       text-decoration: none;
       transition: all 0.3s;
-      clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%);
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
     }
 
     .btn-return:hover {
-      background: rgba(0, 212, 255, 0.1);
-      box-shadow: var(--glow-cyan);
+      box-shadow: var(--glow-yellow);
       transform: translateY(-3px);
     }
 

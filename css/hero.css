@@ -21,80 +21,84 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+    linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%);
 }
 
-/* ── Ambient orbs ── */
+/* ── Ambient orbs (The 'Night City' lights) ── */
 .hero-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(100px);
   pointer-events: none;
+  opacity: 0.6;
 }
 
 .hero-orb-1 {
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(0, 80, 255, 0.2) 0%, transparent 70%);
-  top: -100px; left: 50%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0, 94, 255, 0.15) 0%, transparent 70%);
+  top: -150px; left: 50%;
   transform: translateX(-50%);
 }
 
 .hero-orb-2 {
-  width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(192, 32, 255, 0.25) 0%, transparent 70%);
-  bottom: 100px; right: 10%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255, 0, 85, 0.15) 0%, transparent 70%);
+  bottom: 50px; right: 5%;
 }
 
 .hero-orb-3 {
-  width: 200px; height: 200px;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 70%);
-  bottom: 80px; left: 15%;
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(252, 238, 10, 0.1) 0%, transparent 70%);
+  bottom: 0px; left: 10%;
 }
 
 /* ── Eyebrow ── */
 .hero-eyebrow {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
-  color: var(--cyan);
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  color: var(--neon-yellow);
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s ease forwards;
+  text-transform: uppercase;
 }
 
 .hero-eyebrow::before {
-  content: '> ';
-  color: var(--pink);
+  content: '[SYSTEM_ACTIVE] ';
+  color: var(--neon-cyan);
+  font-weight: bold;
 }
 
 /* ── Title ── */
 .hero-title {
   font-family: 'Orbitron', monospace;
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(3.2rem, 9vw, 7rem);
   font-weight: 900;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s ease forwards;
+  text-transform: uppercase;
 }
 
 .hero-title .line1 {
   display: block;
   color: #ffffff;
-  text-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
 .hero-title .line2 {
   display: block;
-  background: linear-gradient(90deg, var(--cyan) 0%, var(--blue) 40%, var(--pink) 100%);
+  background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--neon-blue) 50%, var(--neon-pink) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.4));
+  filter: drop-shadow(0 0 15px rgba(0, 243, 255, 0.4));
 }
 
 /* ── Subtitle ── */
@@ -121,45 +125,46 @@
 
 .btn-primary {
   font-family: 'Orbitron', monospace;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: var(--navy);
-  background: linear-gradient(90deg, var(--cyan), var(--blue));
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #000;
+  background: var(--neon-yellow);
   border: none;
-  padding: 0.85rem 2rem;
+  padding: 1rem 2.5rem;
   cursor: pointer;
   text-decoration: none;
-  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
   transition: all 0.25s;
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px rgba(252, 238, 10, 0.3);
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 50px rgba(0, 212, 255, 0.6), 0 0 100px rgba(0, 128, 255, 0.3);
-  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(252, 238, 10, 0.6);
+  transform: translate(2px, -2px);
 }
 
 .btn-secondary {
   font-family: 'Orbitron', monospace;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: var(--cyan);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--neon-cyan);
   background: transparent;
-  border: 1px solid var(--border-cyan);
-  padding: 0.85rem 2rem;
+  border: 1px solid var(--neon-cyan);
+  padding: 1rem 2.5rem;
   cursor: pointer;
   text-decoration: none;
-  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
   transition: all 0.25s;
+  text-transform: uppercase;
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 212, 255, 0.08);
-  border-color: var(--cyan);
+  background: rgba(0, 243, 255, 0.1);
   box-shadow: var(--glow-cyan);
-  transform: translateY(-2px);
+  transform: translate(-2px, -2px);
 }
 
 /* ── Stats bar ── */
@@ -167,20 +172,22 @@
   position: absolute;
   bottom: 3rem;
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
   opacity: 0;
   animation: fadeUp 0.8s 1s ease forwards;
 }
 
 .stat {
   text-align: center;
+  border-left: 2px solid rgba(255, 255, 255, 0.05);
+  padding-left: 1.5rem;
 }
 
 .stat-num {
   font-family: 'Orbitron', monospace;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--cyan);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--neon-cyan);
   display: block;
   text-shadow: var(--glow-cyan);
 }

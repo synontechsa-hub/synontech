@@ -24,11 +24,11 @@
 
 /* ── Card base ── */
 .project-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: rgba(26, 26, 26, 0.95);
+  border: 1px solid var(--steel);
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
 }
 
@@ -36,36 +36,34 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.04) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s;
+  opacity: 0.5;
 }
 
 .project-card:hover {
-  border-color: rgba(0, 212, 255, 0.5);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 40px rgba(0, 212, 255, 0.15), 0 0 0 1px rgba(0, 212, 255, 0.2);
+  border-color: var(--neon-cyan);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 243, 255, 0.1);
 }
-
-.project-card:hover::before { opacity: 1; }
 
 /* ── Card anatomy ── */
 .card-accent {
   position: absolute;
   top: 0; right: 0;
   width: 20px; height: 20px;
-  border-bottom: 1px solid var(--cyan);
-  border-left: 1px solid var(--cyan);
+  border-bottom: 1px solid var(--neon-cyan);
+  border-left: 1px solid var(--neon-cyan);
+  background: rgba(0, 243, 255, 0.1);
 }
 
 .card-banner {
-  height: 5px;
+  height: 4px;
   width: 100%;
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1.75rem;
 }
 
 .card-type {
@@ -73,7 +71,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -81,118 +79,74 @@
 
 .card-type::before {
   content: '';
-  width: 6px; height: 6px;
-  border-radius: 50%;
+  width: 4px; height: 4px;
   display: inline-block;
-  background: var(--cyan); /* Default fallback */
-}
-
-.card-title {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.03em;
+  background: #fff;
 }
 
 .card-desc {
   font-size: 0.9rem;
-  color: rgba(207, 232, 255, 0.6);
-  line-height: 1.65;
-  margin-bottom: 1.25rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
   font-weight: 400;
-}
-
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1.25rem;
 }
 
 .tag {
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.6rem;
-  letter-spacing: 0.08em;
-  padding: 0.2rem 0.55rem;
-  border-radius: 2px;
-  border: 1px solid;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0;
+  border: 1px solid var(--steel);
+  color: var(--text-dim);
+  text-transform: uppercase;
 }
 
 .card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.card-status {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.status-dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  animation: pulse 2s infinite;
-}
-
-.card-link {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  transition: all 0.2s;
-}
-
-.card-link:hover { text-shadow: var(--glow-cyan); }
+.card-link:hover { text-shadow: 0 0 8px currentColor; }
 
 /* ── Colour variants ── */
 
 /* Cyan (Linker.AI) */
-.card--cyan .card-banner  { background: linear-gradient(90deg, var(--cyan), var(--blue)); }
-.card--cyan .card-type    { color: var(--cyan); }
-.card--cyan .card-type::before { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
-.card--cyan .tag          { color: var(--cyan); border-color: rgba(0, 212, 255, 0.25); background: rgba(0, 212, 255, 0.06); }
-.card--cyan .card-link    { color: var(--cyan); }
-.card--cyan .status-dot   { background: #00ff88; box-shadow: 0 0 6px #00ff88; }
-.card--cyan .card-status  { color: #00ff88; }
+.card--cyan .card-banner  { background: var(--neon-cyan); }
+.card--cyan .card-type    { color: var(--neon-cyan); }
+.card--cyan .card-type::before { background: var(--neon-cyan); box-shadow: 0 0 8px var(--neon-cyan); }
+.card--cyan .tag:hover    { color: var(--neon-cyan); border-color: var(--neon-cyan); background: rgba(0, 243, 255, 0.05); }
+.card--cyan .card-link    { color: var(--neon-cyan); }
+.card--cyan .status-dot   { background: var(--neon-green); box-shadow: 0 0 8px var(--neon-green); }
+.card--cyan .card-status  { color: var(--neon-green); }
 
 /* Pink (SynQuest) */
-.card--pink .card-banner  { background: linear-gradient(90deg, var(--pink), var(--magenta)); }
-.card--pink .card-type    { color: var(--pink); }
-.card--pink .card-type::before { background: var(--pink); box-shadow: 0 0 6px var(--pink); }
-.card--pink .tag          { color: var(--pink); border-color: rgba(192, 32, 255, 0.25); background: rgba(192, 32, 255, 0.06); }
-.card--pink .card-link    { color: var(--pink); }
-.card--pink .status-dot   { background: var(--pink); box-shadow: 0 0 6px var(--pink); }
-.card--pink .card-status  { color: var(--pink); }
+.card--pink .card-banner  { background: var(--neon-pink); }
+.card--pink .card-type    { color: var(--neon-pink); }
+.card--pink .card-type::before { background: var(--neon-pink); box-shadow: 0 0 8px var(--neon-pink); }
+.card--pink .tag:hover    { color: var(--neon-pink); border-color: var(--neon-pink); background: rgba(255, 0, 85, 0.05); }
+.card--pink .card-link    { color: var(--neon-pink); }
+.card--pink .status-dot   { background: var(--neon-pink); box-shadow: 0 0 8px var(--neon-pink); }
+.card--pink .card-status  { color: var(--neon-pink); }
 
 /* Gold (SynConvert) */
-.card--gold .card-banner  { background: linear-gradient(90deg, var(--gold), #ff6600); }
-.card--gold .card-type    { color: var(--gold); }
-.card--gold .card-type::before { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
-.card--gold .tag          { color: var(--gold); border-color: rgba(255, 170, 0, 0.25); background: rgba(255, 170, 0, 0.06); }
-.card--gold .card-link    { color: var(--gold); }
-.card--gold .status-dot   { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
-.card--gold .card-status  { color: var(--gold); }
+.card--gold .card-banner  { background: var(--neon-yellow); }
+.card--gold .card-type    { color: var(--neon-yellow); }
+.card--gold .card-type::before { background: var(--neon-yellow); box-shadow: 0 0 8px var(--neon-yellow); }
+.card--gold .tag:hover    { color: var(--neon-yellow); border-color: var(--neon-yellow); background: rgba(252, 238, 10, 0.05); }
+.card--gold .card-link    { color: var(--neon-yellow); }
+.card--gold .status-dot   { background: var(--neon-yellow); box-shadow: 0 0 8px var(--neon-yellow); }
+.card--gold .card-status  { color: var(--neon-yellow); }
 
 /* Teal (KerfCut) */
-.card--teal .card-banner  { background: linear-gradient(90deg, var(--teal), #00aaff); }
-.card--teal .card-type    { color: var(--teal); }
-.card--teal .card-type::before { background: var(--teal); box-shadow: 0 0 6px var(--teal); }
-.card--teal .tag          { color: var(--teal); border-color: rgba(0, 255, 204, 0.25); background: rgba(0, 255, 204, 0.06); }
-.card--teal .card-link    { color: var(--teal); }
-.card--teal .status-dot   { background: var(--teal); box-shadow: 0 0 6px var(--teal); animation: none; }
-.card--teal .card-status  { color: rgba(207, 232, 255, 0.4); }
+.card--teal .card-banner  { background: #00ffcc; }
+.card--teal .card-type    { color: #00ffcc; }
+.card--teal .card-type::before { background: #00ffcc; box-shadow: 0 0 8px #00ffcc; }
+.card--teal .tag:hover    { color: #00ffcc; border-color: #00ffcc; background: rgba(0, 255, 204, 0.05); }
+.card--teal .card-link    { color: #00ffcc; }
+.card--teal .status-dot   { background: var(--steel); animation: none; }
+.card--teal .card-status  { color: var(--text-dim); }
