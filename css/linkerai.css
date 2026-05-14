@@ -55,17 +55,18 @@
 
 .linker-eyebrow {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.35em;
-  color: var(--cyan);
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  color: var(--neon-yellow);
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s ease forwards;
+  text-transform: uppercase;
 }
 
 .linker-eyebrow::before {
-  content: '> ';
-  color: var(--pink);
+  content: '[SECURE_LINK] ';
+  color: var(--neon-cyan);
 }
 
 .linker-title {
@@ -77,11 +78,12 @@
   margin-bottom: 1.25rem;
   opacity: 0;
   animation: fadeUp 0.8s 0.35s ease forwards;
-  background: linear-gradient(135deg, #ffffff 0%, var(--cyan) 50%, var(--pink) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--neon-cyan) 50%, var(--neon-pink) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.35));
+  filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.4));
+  text-transform: uppercase;
 }
 
 .linker-tagline {
@@ -118,51 +120,52 @@
 
 .btn-itch {
   font-family: 'Orbitron', monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: var(--navy);
-  background: linear-gradient(90deg, var(--cyan), var(--blue));
+  color: #000;
+  background: var(--neon-yellow);
   border: none;
   padding: 1rem 2.25rem;
   cursor: pointer;
   text-decoration: none;
-  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 85% 100%, 0 100%);
   transition: all 0.25s;
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px rgba(252, 238, 10, 0.3);
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  text-transform: uppercase;
 }
 
 .btn-itch:hover {
-  box-shadow: 0 0 60px rgba(0, 212, 255, 0.6), 0 0 120px rgba(0, 128, 255, 0.3);
-  transform: translateY(-3px);
+  box-shadow: var(--glow-yellow);
+  transform: translate(2px, -2px);
 }
 
 .btn-patreon {
   font-family: 'Orbitron', monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: var(--pink);
+  color: var(--neon-pink);
   background: transparent;
-  border: 1px solid var(--border-pink);
+  border: 1px solid var(--neon-pink);
   padding: 1rem 2.25rem;
   cursor: pointer;
   text-decoration: none;
-  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
   transition: all 0.25s;
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  text-transform: uppercase;
 }
 
 .btn-patreon:hover {
-  background: rgba(192, 32, 255, 0.08);
-  border-color: var(--pink);
+  background: rgba(255, 0, 85, 0.1);
   box-shadow: var(--glow-pink);
-  transform: translateY(-3px);
+  transform: translate(-2px, -2px);
 }
 
 /* ── Status pill ── */
@@ -268,35 +271,38 @@
 
 .feature-title {
   font-family: 'Orbitron', monospace;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--cyan);
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: var(--neon-cyan);
   margin-bottom: 0.6rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .feature-desc {
   font-size: 0.875rem;
-  color: rgba(207, 232, 255, 0.55);
+  color: var(--text-dim);
   line-height: 1.65;
 }
 
 /* ── Bottom CTA banner ── */
 #linker-cta-banner {
   text-align: center;
-  padding: 5rem 3rem;
+  padding: 6rem 3rem;
+  background: rgba(5, 5, 5, 0.5);
 }
 
 .cta-banner-title {
   font-family: 'Orbitron', monospace;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 900;
   color: #fff;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .cta-banner-title span {
-  background: linear-gradient(90deg, var(--cyan), var(--pink));
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -344,17 +350,9 @@
   position: absolute;
   inset: 0;
   background-image: url('../assets/map_screens/map_screen_evening_foggy_02.png');
-  background-image: -webkit-image-set(
-    url('../assets/map_screens/map_screen_evening_foggy_02.webp') 1x,
-    url('../assets/map_screens/map_screen_evening_foggy_02.png') 1x
-  );
-  background-image: image-set(
-    url('../assets/map_screens/map_screen_evening_foggy_02.webp') type('image/webp'),
-    url('../assets/map_screens/map_screen_evening_foggy_02.png') type('image/png')
-  );
   background-size: cover;
   background-position: center top;
-  filter: brightness(0.18) saturate(1.4);
+  filter: brightness(0.2) saturate(1.2);
 }
 
 /* ── Nav logo image ── */
@@ -455,19 +453,20 @@
 
 .cast-name {
   font-family: 'Orbitron', monospace;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--cyan);
-  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--neon-cyan);
+  letter-spacing: 0.15em;
   margin-bottom: 0.2rem;
-  text-shadow: var(--glow-cyan);
+  text-transform: uppercase;
 }
 
 .cast-role {
   font-family: 'Share Tech Mono', monospace;
   font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  color: rgba(207, 232, 255, 0.45);
+  letter-spacing: 0.2em;
+  color: var(--text-dim);
+  text-transform: uppercase;
 }
 
 /* ── Mobile ── */
