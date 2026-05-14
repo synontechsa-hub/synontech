@@ -25,12 +25,13 @@ nav {
 .nav-logo-img {
   height: 22px; /* Adjusted for horizontal wordmark SVG */
   width: auto;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
-  transition: filter 0.3s;
+  filter: brightness(0) invert(1); /* Make black SVG white */
+  transition: all 0.3s ease;
 }
 
 .nav-logo:hover .nav-logo-img {
-  filter: drop-shadow(0 0 12px var(--neon-cyan));
+  filter: invert(78%) sepia(50%) saturate(5437%) hue-rotate(143deg) brightness(105%) contrast(106%); /* Make Neon Cyan */
+  drop-shadow: 0 0 12px var(--neon-cyan);
 }
 
 .nav-links {

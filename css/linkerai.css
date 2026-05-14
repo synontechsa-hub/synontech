@@ -355,14 +355,14 @@
 .linker-nav-logo {
   height: 28px;
   width: auto;
-  filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.3));
+  filter: brightness(0) invert(1); /* Make black SVG white */
 }
 
 .linker-hero-logo {
-  max-width: 500px;
-  width: 80%;
+  max-width: 600px;
+  width: 90%;
   height: auto;
-  filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.2));
+  filter: invert(12%) sepia(100%) saturate(7469%) hue-rotate(336deg) brightness(96%) contrast(108%); /* Brand Pink */
   animation: logoGlow 4s infinite alternate;
 }
 

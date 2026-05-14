@@ -25,12 +25,14 @@ footer {
   height: 18px;
   width: auto;
   opacity: 0.9;
+  filter: brightness(0) invert(1); /* Make black SVG white */
 }
 
 .footer-badge {
   height: 40px;
   width: auto;
   display: block;
+  filter: brightness(0) invert(1); /* Make black SVG white */
 }
 
 .footer-copy {
