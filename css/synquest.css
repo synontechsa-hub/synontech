@@ -1,5 +1,5 @@
 /* ============================================================
-   synquest — page-specific styles
+   Malevolent: Scorned — page-specific styles
    builds on top of the shared synontech css.
    Aesthetic: Grimdark, Ash, Candlelight, MUD.
    ============================================================ */
@@ -322,7 +322,7 @@
 
 .back-link:hover { color: #ffaa00; }
 
-/* ── SynQuest nav override ── */
+/* ── Malevolent: Scorned nav override ── */
 .synquest-nav-title {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1rem;

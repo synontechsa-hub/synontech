@@ -3,12 +3,12 @@ copyright (c) 2026 syn / synonimity / synontech. all rights reserved.
 
 this license applies to all projects within the synontech ecosystem, including but
 not limited to:
-  - project-soullink / linker.ai
-  - kerfcut / syncad
+  - project-soullink / Linker.AI
+  - KerfCut / syncad
   - workerpassport
   - legion
-  - synquest
-  - synconvert
+  - Malevolent: Scorned
+  - SynConvert
   - any future projects, tools, or systems developed under the synontech name
 
 by accessing, downloading, or using the software (the "software"), you agree to

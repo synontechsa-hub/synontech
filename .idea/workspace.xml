@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf4e788a-ad42-4f34-93f1-b96385524711" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_afternoon_raining_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_afternoon_thunderstorms_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_evening_clear_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_evening_foggy_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_morning_clear_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_night_snowing_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/map_screens/map_screen_night_snowing_heavy_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/soul_cards/echo_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/soul_cards/haruto_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/soul_cards/juno_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/soul_cards/renji_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/soul_cards/selene_02.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/kerfcut.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/kerfcut.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/linkerai.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/linkerai.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/synconvert.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/synconvert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/synquest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/synquest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kerfcut.html" beforeDir="false" afterPath="$PROJECT_DIR$/kerfcut.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkerai.html" beforeDir="false" afterPath="$PROJECT_DIR$/linkerai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synconvert.html" beforeDir="false" afterPath="$PROJECT_DIR$/synconvert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synquest.html" beforeDir="false" afterPath="$PROJECT_DIR$/synquest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

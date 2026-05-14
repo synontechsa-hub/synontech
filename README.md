@@ -12,9 +12,9 @@ Welcome to the digital home of **synontech**, where we build tools that push the
 
 | Project | Description | Status |
 | :--- | :--- | :--- |
-| **🏎️ [synconvert](https://github.com/synontechsa-hub/_Development/tree/main/synconvert)** | ultra-fast gpu-accelerated video conversion engine. | v1.0.4 turbo |
-| **🧠 [linker.ai](https://github.com/synontechsa-hub/linker.ai)** | immersive spatial ai simulation with persistent digital souls. | active dev |
-| **📏 [kerfcut](https://github.com/synontechsa-hub/_Development/tree/main/syncad)** | precision workshop productivity and sheet-cut optimization engine. | development |
+| **🏎️ [SynConvert](https://github.com/synontechsa-hub/_Development/tree/main/synconvert)** | ultra-fast gpu-accelerated video conversion engine. | v1.0.4 turbo |
+| **🧠 [Linker.AI](https://github.com/synontechsa-hub/linker.ai)** | immersive spatial ai simulation with persistent digital souls. | active dev |
+| **📏 [KerfCut](https://github.com/synontechsa-hub/_Development/tree/main/syncad)** | precision workshop productivity and sheet-cut optimization engine. | development |
 
 ### 🏢 studio & workforce
 - **🆔 [workerpassport](https://github.com/synontechsa-hub/_Development/tree/main/workerpassport)**: digital identity and credential management for professional workforces.
@@ -24,7 +24,7 @@ Welcome to the digital home of **synontech**, where we build tools that push the
 ### 📦 infrastructure & utilities
 - **📋 [synclerk](https://github.com/synontechsa-hub/_Development/tree/main/synclerk)**: automated documentation and administrative workflow engine.
 - **🏗️ [syncontain](https://github.com/synontechsa-hub/_Development/tree/main/syncontain)**: lightweight containerization and isolation utilities.
-- **🕵️‍♂️ [synquest](https://github.com/synontechsa-hub/_Development/tree/main/synquest)**: system-wide audit, stabilization, and error-prevention framework.
+- **🕵️‍♂️ [Malevolent: Scorned](https://github.com/synontechsa-hub/_Development/tree/main/synquest)**: system-wide audit, stabilization, and error-prevention framework.
 
 ---
 
@@ -39,7 +39,7 @@ Welcome to the digital home of **synontech**, where we build tools that push the
 ## 📫 Connect
 
 - **GitHub Hub**: [synontechsa-hub](https://github.com/synontechsa-hub)
-- **Current Focus**: v1.0.4 synconvert optimization
+- **Current Focus**: v1.0.4 SynConvert optimization
 
 ---
 *© 2026 synontech. all rights reserved. proprietary & confidential.*
