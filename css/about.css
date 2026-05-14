@@ -115,9 +115,58 @@
   color: var(--neon-cyan);
 }
 
-/* ── Mobile ── */
-@media (max-width: 768px) {
-  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .about-box { padding: 1.5rem; }
-  .metric-value { font-size: 1rem; }
+/* ── Creator Section Overrides ── */
+.creator-grid {
+  align-items: center;
+}
+
+.creator-box {
+  border-color: var(--neon-pink);
+  background: rgba(255, 0, 85, 0.03);
+}
+
+.creator-box::before {
+  border-bottom-color: var(--neon-pink);
+  border-left-color: var(--neon-pink);
+  background: rgba(255, 0, 85, 0.15);
+}
+
+.creator-identity {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.creator-handle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--neon-pink);
+  text-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.creator-name {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.creator-actions {
+  margin-top: 2.5rem;
+}
+
+.creator-btn {
+  border-color: var(--neon-pink);
+  color: var(--neon-pink);
+  font-weight: 700;
+}
+
+.creator-btn:hover {
+  background: rgba(255, 0, 85, 0.1);
+  box-shadow: var(--glow-pink);
+  color: var(--neon-pink);
 }

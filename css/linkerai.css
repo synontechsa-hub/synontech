@@ -352,15 +352,23 @@
 .back-link:hover { color: var(--cyan); }
 
 /* ── Linker nav override ── */
-.linker-nav-title {
-  font-family: 'Orbitron', monospace;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  background: linear-gradient(90deg, var(--cyan), var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.linker-nav-logo {
+  height: 28px;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.3));
+}
+
+.linker-hero-logo {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  filter: drop-shadow(0 0 40px rgba(0, 243, 255, 0.2));
+  animation: logoGlow 4s infinite alternate;
+}
+
+@keyframes logoGlow {
+  from { filter: drop-shadow(0 0 20px rgba(0, 243, 255, 0.2)); }
+  to { filter: drop-shadow(0 0 40px rgba(0, 243, 255, 0.4)); }
 }
 
 /* ── Hero background image ── */

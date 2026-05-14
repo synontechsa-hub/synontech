@@ -17,23 +17,20 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.1rem;
-  font-weight: 900;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.2em;
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 26px;
-  width: 26px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 5px var(--neon-cyan));
+  height: 22px; /* Adjusted for wordmark SVG */
+  width: auto;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  transition: filter 0.3s;
+}
+
+.nav-logo:hover .nav-logo-img {
+  filter: drop-shadow(0 0 12px var(--neon-cyan));
 }
 
 .nav-links {
