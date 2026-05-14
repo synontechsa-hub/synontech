@@ -359,16 +359,16 @@
 }
 
 .linker-hero-logo {
-  max-width: 600px;
-  width: 90%;
+  max-width: 500px;
+  width: 80%;
   height: auto;
-  filter: drop-shadow(0 0 40px rgba(0, 243, 255, 0.2));
+  filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.2));
   animation: logoGlow 4s infinite alternate;
 }
 
 @keyframes logoGlow {
-  from { filter: drop-shadow(0 0 20px rgba(0, 243, 255, 0.2)); }
-  to { filter: drop-shadow(0 0 40px rgba(0, 243, 255, 0.4)); }
+  from { filter: drop-shadow(0 0 15px rgba(0, 243, 255, 0.2)); }
+  to { filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.4)); }
 }
 
 /* ── Hero background image ── */

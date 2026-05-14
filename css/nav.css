@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-logo-img {
-  height: 22px; /* Adjusted for wordmark SVG */
+  height: 22px; /* Adjusted for horizontal wordmark SVG */
   width: auto;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
   transition: filter 0.3s;
