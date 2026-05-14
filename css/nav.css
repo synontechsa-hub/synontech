@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-logo-img {
-  height: 22px; /* Adjusted for horizontal wordmark SVG */
+  height: 28px; /* 25% Increase for better brand presence */
   width: auto;
   filter: brightness(0) invert(1); /* Make black SVG white */
   transition: all 0.3s ease;
