@@ -155,9 +155,9 @@
 /* ── Middle Row (Asymmetric Layout) ── */
 .hero-middle-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Shifted left to reduce gap */
   align-items: flex-start;
-  gap: 4rem;
+  gap: 2.5rem; /* Reduced gap from 4rem */
   margin-bottom: 3rem;
 }
 
@@ -165,11 +165,10 @@
   border-left: 2px solid rgba(255,255,255,0.1);
   padding-left: 2rem;
   max-width: 500px;
-  flex: 1;
 }
 
 .hero-video-container {
-  flex: 0 0 320px; /* Reduced size for 'Mini-Feed' look */
+  flex: 0 0 370px; /* Increased 15% from 320px */
   opacity: 0;
   animation: fadeUp 0.8s 0.6s ease forwards;
   position: relative;
