@@ -24,7 +24,6 @@ footer {
   height: 32px; /* Slightly more refined height */
   width: auto;
   display: block;
-  filter: brightness(0) invert(1); /* Make black SVG white */
   opacity: 0.8;
   transition: opacity 0.3s;
 }
