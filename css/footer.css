@@ -21,7 +21,7 @@ footer {
 }
 
 .footer-badge {
-  height: 32px; /* Slightly more refined height */
+  height: 55px; /* Significant size increase for brand clarity */
   width: auto;
   display: block;
   opacity: 0.8;

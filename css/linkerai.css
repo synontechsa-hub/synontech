@@ -71,7 +71,7 @@
 
 .linker-title {
   font-family: 'Orbitron', monospace;
-  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-size: clamp(2.2rem, 10vw, 8rem); /* Reduced min-size from 3.5rem for mobile safety */
   font-weight: 900;
   line-height: 1;
   letter-spacing: 0.06em;
@@ -353,8 +353,11 @@
 
 /* ── Linker nav override ── */
 .linker-nav-logo {
-  height: 28px;
+  height: 24px;
   width: auto;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .linker-hero-logo {
@@ -382,14 +385,17 @@
 /* ── Nav logo image ── */
 .nav-logo-img {
   height: 28px;
-  width: 28px;
+  width: auto;
   object-fit: contain;
-  border-radius: 6px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4rem;
-  position: relative;
-  top: -1px;
+  transition: all 0.3s ease;
+}
+
+.linker-nav-logo {
+  height: 22px;
+  width: auto;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* ── NPC Cast strip ── */

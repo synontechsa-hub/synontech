@@ -70,27 +70,52 @@
   </nav>
 
   <!-- ══════════════════════════════════════════════
-     HERO
+     HERO (TACTICAL HUD VERSION)
 ═══════════════════════════════════════════════ -->
   <section id="hero">
+    <!-- HUD Layer -->
+    <div class="hero-hud-container">
+      <div class="hud-frame top-left"><span>A.01-FRAME</span></div>
+      <div class="hud-frame top-right"><span>N 34.0522<br>W 118.2437</span></div>
+      <div class="hud-frame bottom-left"><span>LOADING_STATE<br>SYN_TECH...</span></div>
+      <div class="hud-frame bottom-right"></div>
+
+      <div class="hud-label top-center">[SYSTEM_ACTIVE] INDEPENDENT DIGITAL STUDIO // EST. 2024</div>
+      <div class="hud-label top-left-inner">[8x7A_02]</div>
+    </div>
+
     <div class="hero-grid-bg"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-data-stream"></div>
 
-    <p class="hero-eyebrow">Independent digital studio // Est. 2024</p>
+    <div class="hero-content">
+      <p class="hero-eyebrow">&lt;CMD_RUN_FUTURE_STATE&gt;<br>&lt;STATUS_ACTIVE&gt;</p>
 
-    <h1 class="hero-title">
-      <span class="line1">BUILD THE</span>
-      <span class="line2">IMPOSSIBLE</span>
-    </h1>
+      <h1 class="hero-title" data-text="CODE THE FUTURE. BREAK THE LIMITS.">
+        <span class="line1">CODE THE FUTURE.</span>
+        <span class="line2">BREAK THE LIMITS.</span>
+      </h1>
 
-    <p class="hero-sub">games, apps, and ai experiences crafted at the intersection of vision and code. one developer.
-      no compromises.</p>
+      <div class="hero-desc-block">
+        <p class="hero-sub">games, apps, and ai experiences crafted at the intersection of vision and code. one developer. no compromises.</p>
+        <p class="hero-manifesto">VISION. CODE. / NO COMPROMISES.</p>
+      </div>
 
-    <div class="hero-buttons">
-      <a href="#portfolio" class="btn-primary">View projects</a>
-      <a href="#about" class="btn-secondary">About synontech</a>
+      <div class="hero-buttons">
+        <div class="tactical-btn-wrapper">
+          <div class="btn-module-tab">SECURE_ACCESS_42</div>
+          <a href="#portfolio" class="btn-primary-tactical">
+            <span class="btn-text">View projects</span>
+            <div class="btn-progress-bar"><div class="fill"></div></div>
+            <span class="btn-status">98%</span>
+          </a>
+          <div class="btn-wires"></div>
+        </div>
+
+        <div class="init-wrapper">
+          <span class="init-tag">INIT ></span>
+          <a href="#about" class="btn-secondary-tactical">About synontech</a>
+        </div>
+      </div>
     </div>
 
     <div class="hero-stats">

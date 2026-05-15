@@ -10,7 +10,7 @@
 
 .future-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Reduced from 260px for mobile safety */
   gap: 1.25rem;
   margin-top: 2.5rem;
 }

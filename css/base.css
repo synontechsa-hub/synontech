@@ -62,6 +62,12 @@ section {
   padding: 6rem 3rem;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1.5rem;
+  }
+}
+
 .section-inner {
   max-width: 1100px;
   margin: 0 auto;
