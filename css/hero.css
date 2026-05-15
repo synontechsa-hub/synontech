@@ -137,12 +137,63 @@
   line-height: 1.4;
 }
 
+/* ── Middle Row (Asymmetric Layout) ── */
+.hero-middle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
 .hero-desc-block {
   border-left: 2px solid rgba(255,255,255,0.1);
   padding-left: 2rem;
-  max-width: 600px;
-  margin-bottom: 3rem;
+  max-width: 500px;
+  flex: 1;
 }
+
+.hero-video-container {
+  flex: 1;
+  max-width: 450px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.6s ease forwards;
+}
+
+.video-frame {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0,0,0,0.4);
+  padding: 5px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: screen; /* Makes black backgrounds transparent for that hologram look */
+  filter: contrast(1.1) brightness(1.2) saturate(1.2);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 243, 255, 0.05), transparent);
+  pointer-events: none;
+}
+
+.video-brackets::before, .video-brackets::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--neon-cyan);
+  pointer-events: none;
+}
+
+.video-brackets::before { top: -2px; left: -2px; border-right: none; border-bottom: none; }
+.video-brackets::after { bottom: -2px; right: -2px; border-left: none; border-top: none; }
 
 .hero-sub {
   font-size: 1.1rem;
@@ -302,7 +353,9 @@
 @media (max-width: 768px) {
   #hero { padding: 8rem 1.5rem 4rem; text-align: center; }
   .hero-hud-container { inset: 1rem; }
+  .hero-middle-row { flex-direction: column; align-items: center; gap: 2rem; }
   .hero-desc-block { border-left: none; padding-left: 0; }
+  .hero-video-container { max-width: 100%; }
   .hero-buttons { flex-direction: column; gap: 2rem; }
   .hero-stats { position: relative; bottom: 0; right: 0; margin-top: 4rem; justify-content: center; }
 }
