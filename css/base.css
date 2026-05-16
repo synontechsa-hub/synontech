@@ -131,28 +131,18 @@ section {
 /* ── HUD Global Wrap ── */
 .global-hud-container {
   position: fixed;
-  inset: 1.5rem;
-  top: 5rem; /* Pushed down to clear the navigation bar */
+  inset: 6.5rem 2rem 4rem; /* Large top margin to clear nav */
   pointer-events: none;
-  z-index: 1000;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-/* If we want it only in hero/header areas per page, we can use absolute in a relative parent */
-.section-hud {
-  position: absolute;
-  inset: 1.5rem;
-  pointer-events: none;
-  z-index: 10;
+  z-index: 50; /* Below nav (z-100) */
 }
 
 .hud-frame {
   position: absolute;
-  width: 60px; /* Slightly smaller for cleaner look */
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 1px solid rgba(252, 238, 10, 0.2);
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.5rem; /* Shrunk font slightly */
+  font-size: 0.5rem;
   color: var(--text-dim);
   padding: 4px;
   text-transform: uppercase;
