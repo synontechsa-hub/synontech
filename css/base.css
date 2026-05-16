@@ -130,8 +130,9 @@ section {
 
 /* ── HUD Global Wrap ── */
 .global-hud-container {
-  position: fixed; /* Fixed so it stays on screen during scroll or absolute for section focus */
+  position: fixed;
   inset: 1.5rem;
+  top: 5rem; /* Pushed down to clear the navigation bar */
   pointer-events: none;
   z-index: 1000;
   border: 1px solid rgba(255, 255, 255, 0.03);
@@ -147,13 +148,13 @@ section {
 
 .hud-frame {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px; /* Slightly smaller for cleaner look */
+  height: 60px;
   border: 1px solid rgba(252, 238, 10, 0.2);
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.55rem;
+  font-size: 0.5rem; /* Shrunk font slightly */
   color: var(--text-dim);
-  padding: 6px;
+  padding: 4px;
   text-transform: uppercase;
 }
 
