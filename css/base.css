@@ -127,3 +127,61 @@ section {
   );
   margin: 0;
 }
+
+/* ── HUD Global Wrap ── */
+.global-hud-container {
+  position: fixed; /* Fixed so it stays on screen during scroll or absolute for section focus */
+  inset: 1.5rem;
+  pointer-events: none;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* If we want it only in hero/header areas per page, we can use absolute in a relative parent */
+.section-hud {
+  position: absolute;
+  inset: 1.5rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hud-frame {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(252, 238, 10, 0.2);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.hud-frame.top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+.hud-frame.top-right { top: 0; right: 0; border-left: none; border-bottom: none; text-align: right; }
+.hud-frame.bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; display: flex; align-items: flex-end; }
+.hud-frame.bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+.hud-frame.bottom-right::after {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 15px; height: 15px;
+  background: var(--neon-cyan);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  opacity: 0.3;
+}
+
+.hud-label {
+  position: absolute;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .hud-frame { width: 40px; height: 40px; }
+  .hud-frame span { display: none; }
+}

@@ -23,51 +23,24 @@
   max-width: 1200px;
 }
 
-/* ── HUD Layer ── */
+/* ── HUD Layer (Moved to base.css for global use) ── */
 .hero-hud-container {
   position: absolute;
   inset: 2rem;
   pointer-events: none;
   z-index: 10;
-  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-.hud-frame {
+/* ── Hero Specific Labels ── */
+.hero-labels {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgba(252, 238, 10, 0.3);
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.6rem;
-  color: var(--text-dim);
-  padding: 8px;
-}
-
-.hud-frame.top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
-.hud-frame.top-right { top: 0; right: 0; border-left: none; border-bottom: none; text-align: right; }
-.hud-frame.bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; display: flex; align-items: flex-end; }
-.hud-frame.bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
-
-.hud-frame.bottom-right::after {
-  content: '';
-  position: absolute;
-  bottom: 10px; right: 10px;
-  width: 20px; height: 20px;
-  background: var(--neon-cyan);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  opacity: 0.4;
-}
-
-.hud-label {
-  position: absolute;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
 }
 
 .hud-label.top-center {
-  top: -1.2rem;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   background: var(--black-void);
@@ -76,7 +49,7 @@
 }
 
 .hud-label.top-left-inner {
-  top: 1rem;
+  top: 3rem;
   left: 110px;
 }
 
@@ -155,9 +128,9 @@
 /* ── Middle Row (Asymmetric Layout) ── */
 .hero-middle-row {
   display: flex;
-  justify-content: flex-start; /* Shifted left to reduce gap */
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 2.5rem; /* Reduced gap from 4rem */
+  gap: 1.5rem; /* Reduced gap to pull video closer to text */
   margin-bottom: 3rem;
 }
 
@@ -168,7 +141,7 @@
 }
 
 .hero-video-container {
-  flex: 0 0 370px; /* Increased 15% from 320px */
+  flex: 0 0 420px; /* Increased to ~420px (15% more from original 370px target) */
   opacity: 0;
   animation: fadeUp 0.8s 0.6s ease forwards;
   position: relative;

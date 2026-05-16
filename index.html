@@ -48,6 +48,14 @@
 
 <body>
 
+  <!-- Global HUD Overlay -->
+  <div class="global-hud-container">
+    <div class="hud-frame top-left"><span>A.01-FRAME</span></div>
+    <div class="hud-frame top-right"><span>N 34.0522<br>W 118.2437</span></div>
+    <div class="hud-frame bottom-left"><span>LOADING_STATE<br>SYN_TECH...</span></div>
+    <div class="hud-frame bottom-right"></div>
+  </div>
+
   <!-- ══════════════════════════════════════════════
      NAV
 ═══════════════════════════════════════════════ -->
@@ -73,19 +81,13 @@
      HERO (TACTICAL HUD VERSION)
 ═══════════════════════════════════════════════ -->
   <section id="hero">
-    <!-- HUD Layer -->
-    <div class="hero-hud-container">
-      <div class="hud-frame top-left"><span>A.01-FRAME</span></div>
-      <div class="hud-frame top-right"><span>N 34.0522<br>W 118.2437</span></div>
-      <div class="hud-frame bottom-left"><span>LOADING_STATE<br>SYN_TECH...</span></div>
-      <div class="hud-frame bottom-right"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-data-stream"></div>
 
+    <div class="hero-labels">
       <div class="hud-label top-center">[SYSTEM_ACTIVE] INDEPENDENT DIGITAL STUDIO // EST. 2024</div>
       <div class="hud-label top-left-inner">[8x7A_02]</div>
     </div>
-
-    <div class="hero-grid-bg"></div>
-    <div class="hero-data-stream"></div>
 
     <div class="hero-content">
       <p class="hero-eyebrow">&lt;CMD_RUN_FUTURE_STATE&gt;<br>&lt;STATUS_ACTIVE&gt;</p>
