@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KerfCut. Precision cut planning for serious workshops. By synontech.">
   <title>KerfCut — synontech</title>
   <link rel="icon" type="image/png" href="assets/synontech_favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Shared Styles -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
+  
+  <!-- Page-Specific Styles -->
   <link rel="stylesheet" href="css/kerfcut.css">
-  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
@@ -19,57 +26,267 @@
   <div class="global-hud-container">
     <div class="hud-frame top-left"><span>A.01-FRAME</span></div>
     <div class="hud-frame top-right"><span>N 34.0522<br>W 118.2437</span></div>
-    <div class="hud-frame bottom-left"><span>KERFCUT_SYS<br>INITIALIZED...</span></div>
+    <div class="hud-frame bottom-left"><span>KERFCUT_SYS<br>OPTIMIZING...</span></div>
     <div class="hud-frame bottom-right"></div>
   </div>
 
-<nav>
+<!-- ══════════════════════════════════════════════
+     NAV 
+═══════════════════════════════════════════════ -->
+<nav style="justify-content: space-between; border-bottom: 1px solid rgba(0, 255, 136, 0.2);">
   <a href="index.html" class="nav-logo">
     <img src="assets/synontech_dark_background.png" alt="synontech" class="nav-logo-img">
   </a>
-  <a href="index.html" class="nav-cta">Back to studio</a>
+  <div class="kerfcut-nav-title">
+    KerfCut
+  </div>
+  <a href="404.html" class="btn-kc" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Download v1.0.0</a>
 </nav>
 
-<section class="project-hero">
-  <div class="hero-inner reveal">
-    <p class="project-eyebrow">Productivity // Mobile utility</p>
-    <h1 class="project-title">Kerf<span>Cut</span></h1>
-    <p class="project-desc">Precision productivity for the modern maker. KerfCut simplifies complex workshop calculations, inventory tracking, and project planning into a high-performance mobile interface.</p>
-    <div class="project-status">
-      <span class="status-dot"></span> In development
-    </div>
+<!-- ══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-hero">
+  <div class="kerfcut-grid-bg"></div>
+  <div class="kerfcut-orb-1"></div>
+  <div class="kerfcut-orb-2"></div>
+
+  <p class="kerfcut-eyebrow">Productivity // Workshop Utility</p>
+
+  <h1 class="kerfcut-title">Kerf<span>Cut</span></h1>
+  <p class="kerfcut-tagline">Stop measuring twice. Start cutting right.</p>
+
+  <p class="kerfcut-desc">
+    Precision cut planning for serious workshops. Maximize material yield, generate instant quotes, and eliminate the guesswork from your sheet goods. Every offcut is profit walking out the door—stop leaving it on the floor.
+  </p>
+
+  <div class="kerfcut-ctas">
+    <a href="404.html" class="btn-kc">
+      ⬇ Download v1.0.0
+    </a>
+  </div>
+
+  <div class="kerfcut-status">
+    <span class="kerfcut-status-dot"></span>
+    SYS.ONLINE // Ready for deployment
   </div>
 </section>
 
-<section class="project-details">
+<div class="cyber-divider"></div>
+
+<!-- ══════════════════════════════════════════════
+     THE PROBLEM (Pain Points)
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-problem">
   <div class="section-inner">
-    <div class="details-grid">
-      <div class="reveal">
-        <h3>The mission</h3>
-        <p>Built for craftspeople who value efficiency, KerfCut removes the friction between planning and execution. It's designed to be used in high-intensity workshop environments where speed and accuracy are non-negotiable.</p>
+    <p class="section-tag reveal">Diagnostics</p>
+    <h2 class="section-title reveal">The cost of <span>manual planning</span></h2>
+    
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">📐</div>
+        <h3 class="feature-title">Time Wasted</h3>
+        <p class="feature-desc">Pencil sketches and spreadsheets don't scale. One complex job can take hours to plan by hand, stealing time from actual production.</p>
       </div>
-      <div class="reveal reveal-delay-1">
-        <h3>Core stack</h3>
-        <ul class="stack-list">
-          <li>Flutter / Dart</li>
-          <li>Local-First Storage</li>
-          <li>Real-time Calculation Engine</li>
-          <li>Cross-Platform Deploy</li>
-        </ul>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">♻️</div>
+        <h3 class="feature-title">Material Loss</h3>
+        <p class="feature-desc">Without algorithmic optimization, you're packing sheets inefficiently. That means buying more material than you need and filling the scrap bin.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">💸</div>
+        <h3 class="feature-title">Quote Guesswork</h3>
+        <p class="feature-desc">Underquote a job and you eat the difference. Overquote and you lose the bid. Without exact material calculations, pricing is a gamble.</p>
       </div>
     </div>
   </div>
 </section>
 
+<div class="cyber-divider"></div>
+
+<!-- ══════════════════════════════════════════════
+     TECH STACK
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-tech" class="tech-stack-container reveal">
+  <div class="tech-item"><span>Engine:</span> Python 3</div>
+  <div class="tech-item"><span>GUI:</span> PyQt6</div>
+  <div class="tech-item"><span>Storage:</span> Local JSON/ZAD</div>
+  <div class="tech-item"><span>Export:</span> ReportLab PDF</div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FEATURES GRID
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-features">
+  <div class="section-inner">
+    <p class="section-tag reveal">Capabilities</p>
+    <h2 class="section-title reveal">Workshop <span>Optimized</span></h2>
+
+    <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+      
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔲</div>
+        <h3 class="feature-title">Smart Optimization</h3>
+        <p class="feature-desc">MaxRects BSSF and Guillotine algorithms chew through complex piece lists, finding the tightest possible packing arrangement across all your available sheets in seconds.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📋</div>
+        <h3 class="feature-title">Multi-Sheet Planning</h3>
+        <p class="feature-desc">Working with different sheet sizes in a single job? No problem. KerfCut tracks them all and prioritizes packing to minimize the total number of sheets required.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">💰</div>
+        <h3 class="feature-title">Instant Quoting</h3>
+        <p class="feature-desc">Input your raw material costs and desired markup. KerfCut automatically calculates the total job price based on actual material usage, ready for client review.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🌾</div>
+        <h3 class="feature-title">Grain & Rotation Locks</h3>
+        <p class="feature-desc">Working with timber or veneer? Lock the grain direction per piece to ensure the optimizer respects your material's visual or structural requirements.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📄</div>
+        <h3 class="feature-title">PDF Cut Plans</h3>
+        <p class="feature-desc">Generate crisp, professional PDF reports containing visual layout diagrams, numbered piece lists, and cost breakdowns. Print them for the shop floor or attach them to quotes.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Asynchronous Processing</h3>
+        <p class="feature-desc">Heavy jobs with hundreds of pieces won't freeze the app. The optimization engine runs safely in the background, keeping the interface snappy and responsive.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TERMINAL PREVIEW (Simulated Output)
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-log">
+  <div class="section-inner" style="max-width: 900px; margin: 0 auto;">
+    <p class="section-tag reveal">System Output</p>
+    <h2 class="section-title reveal">Process <span>Execution</span></h2>
+
+    <div class="log-container reveal reveal-delay-1">
+      <div class="log-entry">
+        <div class="log-system">[SYS] Job loaded: Cabinet_Order_042</div>
+        <div class="log-system">[SYS] Sheets: 3x 2440×1220 | Pieces: 47 total</div>
+      </div>
+      
+      <div class="log-entry">
+        <div class="log-opt">[OPT] Initializing optimization matrix...</div>
+        <div class="log-opt">[OPT] Strategy: MaxRects-BSSF</div>
+        <div class="log-opt">[OPT] Calculating optimal bin packing...</div>
+      </div>
+      
+      <div class="log-entry">
+        <div class="log-done">[DONE] Placed: 47/47 pieces</div>
+        <div class="log-done">[DONE] Sheets used: 2</div>
+        <div class="log-done">[DONE] Overall Efficiency: 91.4%</div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-quote">[QUOTE] Material cost: $184.00</div>
+        <div class="log-quote">[QUOTE] Base price: $184.00 | Markup: 35%</div>
+        <div class="log-quote">[QUOTE] Total Sell Price: $248.40</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cyber-divider"></div>
+
+<!-- ══════════════════════════════════════════════
+     PRICING
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-pricing">
+  <div class="section-inner">
+    <p class="section-tag reveal">Licensing</p>
+    <h2 class="section-title reveal">Deploy <span>KerfCut</span></h2>
+
+    <div class="pricing-grid">
+      
+      <!-- Free -->
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">Free <span>/ forever</span></div>
+        <ul class="pricing-features">
+          <li>Basic piece optimization</li>
+          <li>Up to 10 pieces per job</li>
+          <li>1 sheet size per job</li>
+          <li>Standard GUI features</li>
+        </ul>
+        <a href="404.html" class="btn-kc" style="width: 100%; justify-content: center;">Download</a>
+      </div>
+
+      <!-- Pro / 1 User -->
+      <div class="pricing-card featured reveal reveal-delay-1">
+        <div class="pricing-tier">Pro Maker</div>
+        <div class="pricing-price">$25 <span>/ license</span></div>
+        <ul class="pricing-features">
+          <li>Unlimited pieces & sheets</li>
+          <li>Grain direction locking</li>
+          <li>Advanced quoting & markup</li>
+          <li>PDF Cut Plan exports</li>
+          <li>Single user license</li>
+        </ul>
+        <a href="404.html" class="btn-kc" style="width: 100%; justify-content: center;">Buy License</a>
+      </div>
+
+      <!-- Workshop -->
+      <div class="pricing-card reveal reveal-delay-2">
+        <div class="pricing-tier">Workshop</div>
+        <div class="pricing-price">$99 <span>/ pack</span></div>
+        <ul class="pricing-features">
+          <li>Everything in Pro</li>
+          <li>5 User licenses included</li>
+          <li>Expandable up to 25 users</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="mailto:synontech.sa@gmail.com" class="btn-kc" style="width: 100%; justify-content: center; background: transparent; color: var(--kc-color);">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     BOTTOM CTA BANNER
+═══════════════════════════════════════════════ -->
+<section id="kerfcut-cta-banner">
+  <div class="section-inner">
+    <h2 class="cta-banner-title reveal">Ready to cut the <span>waste?</span></h2>
+    <p class="cta-banner-sub reveal">
+      Stop guessing on your quotes and throwing away good material. Upgrade your workshop's planning pipeline today.
+    </p>
+    <div class="kerfcut-ctas reveal reveal-delay-1" style="justify-content: center; opacity: 1; animation: none;">
+      <a href="404.html" class="btn-kc">
+        ⬇ Download KerfCut v1.0.0
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
 <footer>
   <div class="footer-left">
     <img src="assets/Powered_by_dark_background.png" alt="powered by synontech" class="footer-badge">
   </div>
-  <ul class="footer-links">
-    <li><a href="index.html">&larr; Main site</a></li>
-    <li><a href="https://github.com/synontechsa-hub" target="_blank" rel="noopener">GitHub</a></li>
-    <li><a href="mailto:synontech.sa@gmail.com">Contact</a></li>
-  </ul>
+
+  <div class="footer-right">
+    <a href="index.html">&larr; Main site</a>
+    <a href="https://github.com/synontechsa-hub" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:synontech.sa@gmail.com">Contact</a>
+  </div>
   <div class="footer-copy">
     <span>&copy; <span id="current-year">2026</span> synontech. all rights reserved.</span>
     <span class="sys-status">SYS.ONLINE // 100%</span>
@@ -77,5 +294,6 @@
 </footer>
 
 <script src="js/main.js" defer></script>
+
 </body>
 </html>
