@@ -1,6 +1,6 @@
 (function () {
   // Add your GA4 Measurement ID here, for example: G-XXXXXXXXXX
-  const measurementId = '';
+  const measurementId = 'G-M547HLMYPT';
 
   if (!measurementId) return;
 
